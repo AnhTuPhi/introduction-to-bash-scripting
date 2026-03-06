@@ -47,3 +47,4 @@ The first 13 chapters would be purely focused on getting some solid Bash scripti
 * [**Bash Password Generator**](ebook/en/content/022-bash-password-generator.md)
 * [**Redirection in Bash**](ebook/en/content/023-bash-redirection.md)
 * [**Useful script**](scripts)
+* [**Personal document command**](https://github.com/AnhTuPhi/document/blob/master/Devops/the_art_of_command_line/USEFUL_COMMAND.md)
