@@ -1,25 +1,4 @@
-<p align="center"><img src="https://imgur.com/eXCcDPp.png" height="450" width="auto"></p>
-
-<div align="center">
-    <p>
-	    <a name="stars"><img src="https://img.shields.io/github/stars/bobbyiliev/introduction-to-bash-scripting?style=for-the-badge"></a>
-	    <a name="forks"><img src="https://img.shields.io/github/forks/bobbyiliev/introduction-to-bash-scripting?logoColor=green&style=for-the-badge"></a>
-	    <a name="contributions"><img src="https://img.shields.io/github/contributors/bobbyiliev/introduction-to-bash-scripting?logoColor=green&style=for-the-badge"></a>
-	    <a name="madeWith"><img src="https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg?style=for-the-badge"></a>
-	    <a name="license"><img src="https://img.shields.io/github/license/bobbyiliev/introduction-to-bash-scripting?style=for-the-badge"></a>
-    </p>
-</div>
-
-## 💡 Introduction to Bash Scripting
-
-This is an open-source introduction to Bash scripting guide/ebook that will help you learn the basics of Bash scripting and start writing awesome Bash scripts that will help you automate your daily SysOps, DevOps, and Dev tasks. No matter if you are a DevOps/SysOps engineer, developer, or just a Linux enthusiast, you can use Bash scripts to combine different Linux commands and automate boring and repetitive daily tasks, so that you can focus on more productive and fun things.
-
-The guide is suitable for anyone working as a developer, system administrator, or a DevOps engineer and wants to learn the basics of Bash scripting.
-
-Repo forked from original repo: https://github.com/bobbyiliev/introduction-to-bash-scripting/
-
 ## 📘 Chapters
-
 The first 13 chapters would be purely focused on getting some solid Bash scripting foundations then the rest of the chapters would give you some real life examples and scripts.
 
 * [**About the book**](ebook/en/content/000-about-the-author.md)
@@ -48,3 +27,54 @@ The first 13 chapters would be purely focused on getting some solid Bash scripti
 * [**Redirection in Bash**](ebook/en/content/023-bash-redirection.md)
 * [**Useful script**](scripts)
 * [**Personal document command**](https://github.com/AnhTuPhi/document/blob/master/Devops/the_art_of_command_line/USEFUL_COMMAND.md)
+
+#!/bin/bash
+# shebang, which is instruct the operation system to run the script with the /bin/bash executable
+# 1. bash structure
+
+echo "hello world"
+
+# 2. bash variables
+phone="0346029436"
+sentense="Here is my phone number"
+
+echo "${sentense} ${phone}"
+
+
+# 3. arguments
+# bash demo.sh first second => first = $1, second = $2
+echo "$1 $2"
+
+# $@ => print all arguments
+echo "$@"
+
+# 4. bash input
+read -p "What is your name? " name
+echo "Hello ${name}. You looks good"
+
+# 5. bash array
+my_array=("val_1" "val2" "val3")
+
+echo "first value in array ${my_array[0]}"
+echo "all values in array: ${my_array[@]}"
+
+# bash slicing
+# pattern ${array:start:length}
+echo "slicing array ${my_array[@]:1}"
+echo "slicing array ${my_array[@]:0:1}"
+
+# string slicing
+# pattern ${string:start:length}
+text="ABCDEF"
+
+echo "slicing ${text:1}"
+echo "slicing ${text:1:3}"
+
+# 6. bash conditional
+# pattern [[ build-in command ]]
+
+# file expression
+# string expression
+# arimetic operators
+# exit status operators
+~                      
