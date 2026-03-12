@@ -28,6 +28,7 @@ The first 13 chapters would be purely focused on getting some solid Bash scripti
 * [**Useful script**](scripts)
 * [**Personal document command**](https://github.com/AnhTuPhi/document/blob/master/Devops/the_art_of_command_line/USEFUL_COMMAND.md)
 
+```
 #!/bin/bash
 # shebang, which is instruct the operation system to run the script with the /bin/bash executable
 # 1. bash structure
@@ -78,3 +79,5 @@ echo "slicing ${text:1:3}"
 # arimetic operators
 # exit status operators
 ~                      
+
+```
